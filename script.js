@@ -3,11 +3,8 @@ var cognome = prompt("inserisci cognome");
 
 lista.push(cognome);
 
+document.getElementById("result").innerHTML += lista.sort();
 
-console.log(lista.sort())
-console.log(lista.toString())
+var position = lista.indexOf(cognome)+1;
 
-for (x = 1; x < lista.length; x++){
-    var position = lista.indexOf(cognome);
-}
-console.log(position)
+document.getElementById("position").innerHTML = position;

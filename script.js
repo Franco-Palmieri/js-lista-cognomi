@@ -1,6 +1,8 @@
-var lista = ["Pagano", "Monti", "Coraggio"]
+var lista = ["Pagano", "Monti", "Coraggio"];
+var cognome = prompt("inserisci cognome");
+var x = lista.indexOf(cognome);
 
 while (lista.length < 4) {
-    lista.push(prompt("inserisci cognome"));
+    lista.push(cognome);
 }
-document.getElementById("result").innerHTML = lista.sort();
+document.getElementById("result").innerHTML = lista.sort() + x;
